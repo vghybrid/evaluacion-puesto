@@ -1,0 +1,10 @@
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// Insertar datos en MySQL lo más optimizado posible
+
+$sql = "SELECT * FROM notas_musicales";
+
+?>
