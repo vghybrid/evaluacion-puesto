@@ -7,16 +7,16 @@ error_reporting(E_ALL);
 
 /*
 delimiter //
-create procedure generate_serie(in varSeries int)
-begin
-declare last_id INT default 1
-while varSeries>0 
-do
-last_id=MAX(series.idserie)+1
-insert into series()
-varSeries=varSeries-1
-end while
+CREATE PROCEDURE generate_serie(in varSeries int)
+BEGIN
+    DECLARE count INT;
+    BEGIN
+        SET count= (SELECT COUNT(*)+1 FROM Series); 
+        IF(count<100)THEN
+            SET varSeries= CONCAT('AAA0',count);
+        END IF; 
+    end;
 end //
 delimiter 
-*/
+
 ?>

@@ -7,9 +7,8 @@ error_reporting(E_ALL);
 
 function generateSerialId() {
     for($i=101; $i < 999; $i++){
-        echo sprintf("AAA".$i."<br/>");
+        echo sprintf("BBC".$i."<br/>"); // BBC101, BBC102...
     }
 }
-echo generateSerialId();
 
 ?>
