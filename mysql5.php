@@ -5,7 +5,6 @@ error_reporting(E_ALL);
 
 // Modificar los datos en MySQL lo más optimizado posible.
 
-$idnota->
 $notes="SI LA SOL FA MI RE DO";
 $noteSeparator=explode(" ",$notes);
 
